@@ -35,19 +35,18 @@ body{
 
 
     font-family:var(--name-stats);
-    background-image: url(images/bg-pattern-top.svg);
-    background-repeat: no-repeat ;
-background-position-y:bottom;
-    object-fit: cover;
-
-    background-image: url(images/bg-pattern-bottom.svg);
+    background-image: url('../images/bg-pattern-top.svg'), url('../images/bg-pattern-bottom.svg');
+    background-repeat: no-repeat;
+    background-position: right 52vw bottom 35vh, left 48vw top 52vh;
 
                        
    
 }
 
+
+
 .container{
-   max-width:375px;
+   width:375px;
     background-color: rgb(255, 255, 255);
     margin: 0 auto; 
 
@@ -57,8 +56,11 @@ border-radius: .86rem;
 box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
+
+
 .img{
     width: 100%;
+    display: block;
 }
 
 .img img {
@@ -96,8 +98,9 @@ h1{
 
 span{
     color: var(--Dark-gray);
-    font-weight: 400;
-    font-size: 1.1rem;
+    font-weight: 300;
+    font-size: 1rem;
+    letter-spacing: .2rem;
 }
 
 
@@ -114,4 +117,17 @@ text-align: center;
 
 .one h2{
     color: var(--Very-dark);
+    padding-bottom: .45rem;
+}
+
+
+.one span{
+    font-size: 16px;    
+
+}
+
+@media (max-width:375px) {
+    .container{
+        width: 90%;
+    }
 }
