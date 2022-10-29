@@ -123,8 +123,29 @@ text-align: center;
 
 }
 
-@media (max-width:375px) {
+@media (max-width:768px) {
+
+    html{
+        font-size: 1rem;
+    }
+
+
     .container{
         width: 90%;
+    }
+
+    Article{
+        display: flex;
+       flex-wrap: wrap;
+    }
+
+
+    .down {
+ 
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+    flex-wrap: wrap;
+      
     }
 }
